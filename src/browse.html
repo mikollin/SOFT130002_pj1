@@ -11,6 +11,7 @@
     
      <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="../css/browse.css" />
 <title>my_pj_浏览</title>
 </head>
@@ -48,18 +49,213 @@
                     <li id="my account">
                         <a href="#">My Account</a>
                         <ul>
-                             <li id="upload"><a href="./upload.html">Upload</a></li>
-                            <li id="pics"><a href="./mypics.html">My Pics</a></li>
-                            <li id="favor"><a href="./myfavor.html">My Favorite</a></li>
-                            <li id="log"><a href="../index.html">Log in</a></li>
+                           <li id="upload"><a href="./upload.html"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload</a></li>
+                            <li id="pics"><a href="./mypics.html"><i class="fa fa-camera-retro" aria-hidden="true"></i> My Pics</a></li>
+                            <li id="favor"><a href="./myfavor.html"><i class="fa fa-gratipay" aria-hidden="true"></i> My Favorite</a></li>
+                            <li id="log"><a href="../index.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Log in</a></li>
                         </ul>
                     </li>
-                    </ul>        
+                    </ul>
+          
                     
                         
   </div>
 
+<section>
 
+<div id="sidebar">
+<div id="sidesearch">
+<p><i class="fa fa-ravelry" aria-hidden="true"></i> SEARCH BY TITLE</p>
+
+ <input type="search" > <input type="button" value="search" onclick="alert('已搜索')">
+  
+</div>
+
+<br>
+
+<div id="hot_content">
+<p><i class="fa fa-fire" aria-hidden="true"></i> HOT CONTENT</p>
+<table>
+<tr><th><a href="#" onclick="alert('已筛选')">SCENERY</a></th></tr>
+<tr><th><a href="#" onclick="alert('已筛选')">CITY</a></th></tr>
+<tr><th><a href="#" onclick="alert('已筛选')">BUILDING</a></th></tr>
+<tr><th><a href="#" onclick="alert('已筛选')">NATURAL</a></th></tr>
+<tr><th><a href="#" onclick="alert('已筛选')">ANIMAL</a></th></tr>
+<tr><th><a href="#" onclick="alert('已筛选')">PEOPLE</a></th></tr>
+<tr><th><a href="#" onclick="alert('已筛选')">WONDER</a></th></tr>
+</table>
+
+
+</div>
+
+<div id="hot_country">
+<p><i class="fa fa-fire" aria-hidden="true"></i> HOT COUNTRY</p>
+<table>
+<tr><th><a href="#" onclick="alert('已筛选')">CHINA</a></th></tr>
+<tr><th><a href="#" onclick="alert('已筛选')">ITALY</a></th></tr>
+<tr><th><a href="#" onclick="alert('已筛选')">JAPAN</a></th></tr>
+
+<tr><th><a href="#" onclick="alert('已筛选')">AMERICA</a></th></tr>
+
+</table>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div id="filter">
+<div id="filtitle">FILTER</div>
+
+<div id="fil">
+
+ <select>
+
+   <option selected="selected" value=""disabled selected hidden>CONTENT</option>
+
+   <option>Building</option>
+   <option>Natural</option>
+  
+
+</select>
+
+<select id="first" onChange="change()">
+
+   <option selected="selected" value=""disabled selected hidden>COUNTRY</option>
+
+   <option>China</option>
+   <option>Japan</option>
+   <option>Italy</option>
+   <option>America</option>
+
+</select>
+
+ 
+
+<select id="second">
+
+  
+
+   <option selected="selected" value=""disabled selected hidden >CITY</option>
+   
+</select>
+
+ <input type="button" value="FILTER" onclick="alert('已筛选')">
+
+ 
+
+<script>
+
+function change()
+
+{
+
+   var x = document.getElementById("first");
+
+   var y = document.getElementById("second");
+
+   y.options.length = 0; // 清除second下拉框的所有内容
+
+   if(x.selectedIndex == 1)
+
+   {
+
+		y.options.add(new Option("Shanghai", "0"));
+		y.options.add(new Option("Kunming", "1"));
+		y.options.add(new Option("Beijing", "2", false, true));  // 默认选中首都
+		y.options.add(new Option("Yantai", "3"));
+
+   }
+
+ 
+
+   if(x.selectedIndex == 2)
+
+   {
+
+		
+
+		y.options.add(new Option("Tokyo", "0", false, true));  //  默认选中首都
+		y.options.add(new Option("Osaka", "1"));
+		y.options.add(new Option("Kamakura", "2"));
+		
+
+   }
+
+   if(x.selectedIndex == 3)
+
+   {
+
+		
+
+		y.options.add(new Option("Roma", "0", false, true));  //  默认选中首都
+		y.options.add(new Option("Milan", "1"));
+		y.options.add(new Option("Venice", "2"));
+		y.options.add(new Option("Florence", "3"));
+		
+
+   }
+
+   if(x.selectedIndex == 4)
+
+   {
+
+		
+
+		y.options.add(new Option("New York", "0", false, true));  //  默认选中首都
+		y.options.add(new Option("San Francisco", "1"));
+		y.options.add(new Option("Washington", "2"));
+		
+
+   }
+ 
+
+}
+
+</script>
+<hr>
+</div>
+
+
+
+<div id="filpic">
+
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9494472443.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8710289254.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8645912379.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9493997865.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8710320515.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8731523536.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8711645510.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9496560520.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9494464567.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9496787858.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9495571869.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9498358806.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9496799098.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/5857398054.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/6114907897.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/6592294487.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8152020963.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9505536014.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9505897492.jpg"/></a>
+<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9502741759.jpg"/></a>
+
+
+</div>
+
+<div id="page"> <a href="#" onclick="alert('正在跳转首页')">&lt </a><a href="#" onclick="alert('正在跳转')">1 </a> 
+<a href="#" onclick="alert('正在跳转')">2 </a><a href="#" onclick="alert('正在跳转')">3 </a> <a href="#" onclick="alert('正在跳转')">4 </a>
+<a href="#" onclick="alert('正在跳转')">5 </a><a href="#" onclick="alert('正在跳转尾页')">> </a></div>
+
+</div>
+
+
+</section>
 
 
  <footer>
