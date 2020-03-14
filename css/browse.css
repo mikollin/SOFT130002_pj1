@@ -353,6 +353,7 @@ section {
 	border: 10px solid white;
 	
 }
+
 #page{
 	margin-top:20px;
 	text-align:middle;
@@ -362,6 +363,7 @@ section {
 	font-size:30px;
 	font-weight:bold;
 	text-decoration: none; /* 去除下划线 */
+	color:black;
    
 }
 

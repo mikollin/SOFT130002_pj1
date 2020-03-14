@@ -143,7 +143,7 @@ header {
    background-color:black;
     position: relative;
     display: none; /* 默认隐藏二级菜单的内容 */
-
+   
 }
 
 /*#upload{
@@ -181,6 +181,7 @@ header {
 .top ul li ul li a{
 	 padding-left:30px;
 	text-align:left;
+	
 	}
 .top ul li:hover ul{
     /* 鼠标选中二级菜单内容时 */
