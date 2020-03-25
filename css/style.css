@@ -65,9 +65,9 @@ header {
 
     
 
-    width: 960px;
+    width: 1000px;
 
-    height: 240px;
+    height: 600px;
 
 }
 
@@ -75,8 +75,9 @@ header {
 
 #login div:first-child {
 
-    font-size: 25px;
+    font-size: 35px;
 
+    color:white;
    
     padding-top: 60px;
 
@@ -88,28 +89,42 @@ header {
 
  
 
-#login div input:first-child {
-
-    width: 300px;
-
-    height: 50px;
-
-    border: none;
-
-}
-
- 
-
-#login div input:nth-child(2) {
-
-    width: 300px;
-
-    height: 50px;
-
-    border: none;
+.name{
+	
+	height:40px;
+	width:300px;
+	margin-right:10px;
+	
 
 }
 
+.name2{
+	width:150px;
+	height:45px;
+	margin-top:20px;
+	background-color:#0099CC;
+	color:white;
+	border-radius: 10px;
+	border:none;
+} 
+
+.name3{
+	width:230px;
+	height:40px;
+	
+	margin-right:10px;
+	
+}
+
+.name4{
+	margin-top:20px;
+	width:230px;
+	height:40px;
+	background-color:#0099CC;
+	color:white;
+	border-radius: 10px;
+	border:none;
+}
  
 
 

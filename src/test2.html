@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+    
+    <img id="1" src="" height="200" width="300" alt="Image preview..."/>
+    <input id="2" type="file" onchange="previewFile()"><br>
+    
+    <script>
+    function previewFile() {
+    	 var preview = document.getElementById('1');
+    	 var file  = document.getElementById('2').files[0];
+    	 var reader = new FileReader();
+    	 reader.onloadend = function () {
+    	  preview.src = reader.result;
+    	 }
+    	 if (file) {
+    	  reader.readAsDataURL(file);
+    	 } else {
+    	  preview.src = "";
+    	 }
+    	}
+    </script>
+    
+
+<!-- 
+var img= document.getElementById('up_button');
+
+img.onclick = function () {
+	
+	
+	        $.ajaxFileUpload({
+	            type: "POST",
+	            url:"/selfsuperXXXXX/uploadFile",//后台接口
+	            dataType: "json",
+	            fileElementId:"file",  // 文件的id
+	            success: function(d){
+	                if(d.code == 0) {
+	                    js.showMessage("上传成功");
+	                    //图片显示
+	                    $("#avatar").attr("value",d.data.url);
+	                    $("#avatarShow").attr("src",d.data.url);
+	                }
+	            },
+	            error: function () {
+	                js.showMessage("上传失败");
+	            },
+	        });
+	    } 
+}
+
+
+*/
+
+-->
+
+<!-- 
+/*var submitButton = document.getElementById('up_submit');
+var myul = document.getElementById('pics');
+var mybutton = document.getElementById('up_submit');*/
+
+/*mybutton.onclick = function () {
+  /*  $.ajax({
+        url: 'http://localhost:8090/upToImg1',
+        type: 'get',
+        success: function (returndata) {
+            console.log(returndata);
+            var str='';
+            returndata.data.forEach(ele => {
+                str+=`<li><img src="http://localhost:8090/upload/${ele.src}" alt="${ele.content}">${ele.name}</li>`
+            });
+            $("#myul").append(str)
+        },
+        error: function (returndata) {
+            console.log(returndata);
+        }
+    });*/
+ -->    
+ 
+
+
+    
+</body>
+</body>
+</html>

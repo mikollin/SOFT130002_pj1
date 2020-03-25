@@ -67,14 +67,14 @@
 <div id="sidesearch">
 <p><i class="fa fa-ravelry" aria-hidden="true"></i> SEARCH BY TITLE</p>
 
-<i class="fa fa-search" aria-hidden="true"></i> <input type="search" > <input type="button" value="search" onclick="alert('已搜索')">
+<i class="fa fa-search" aria-hidden="true"></i> <input name="browse_search" type="search" > <input type="button" value="search" onclick="alert('已搜索')">
   
 </div>
 
 <br>
 
 <div id="hot_content">
-<p><i class="fa fa-fire" aria-hidden="true"></i> HOT CONTENT</p>
+<p><i class="fa fa-fire" aria-hidden="true"></i> HOT CONTENTS</p>
 <table>
 <tr><th><a href="#" onclick="alert('已筛选')">SCENERY</a></th></tr>
 <tr><th><a href="#" onclick="alert('已筛选')">CITY</a></th></tr>
@@ -87,9 +87,10 @@
 
 
 </div>
+<br>
 
 <div id="hot_country">
-<p><i class="fa fa-fire" aria-hidden="true"></i> HOT COUNTRY</p>
+<p><i class="fa fa-fire" aria-hidden="true"></i> HOT COUNTRYS</p>
 <table>
 <tr><th><a href="#" onclick="alert('已筛选')">CHINA</a></th></tr>
 <tr><th><a href="#" onclick="alert('已筛选')">ITALY</a></th></tr>
@@ -101,8 +102,26 @@
 
 
 </div>
+<br>
+
+
+
+<div id="hot_city">
+<p><i class="fa fa-fire" aria-hidden="true"></i> HOT CITIES</p>
+<table>
+<tr><th><a href="#" onclick="alert('已筛选')">SHANGHAI</a></th></tr>
+<tr><th><a href="#" onclick="alert('已筛选')">HOKKAIDO</a></th></tr>
+<tr><th><a href="#" onclick="alert('已筛选')">BUDAPEST</a></th></tr>
+<tr><th><a href="#" onclick="alert('已筛选')">NEWYORK</a></th></tr>
+
+</table>
+
 
 </div>
+</div>
+
+
+
 
 
 
@@ -113,7 +132,7 @@
 
 <div id="fil">
 
- <select>
+ <select name="select_content">
 
    <option selected="selected" value=""disabled selected hidden>CONTENT</option>
 
@@ -123,7 +142,7 @@
 
 </select>
 
-<select id="first" onChange="change()">
+<select id="first" name="select_country" onChange="change()">
 
    <option selected="selected" value=""disabled selected hidden>COUNTRY</option>
 
@@ -136,7 +155,7 @@
 
  
 
-<select id="second">
+<select id="second" name="select_city">
 
   
 
@@ -166,7 +185,8 @@ function change()
 
 		y.options.add(new Option("Shanghai", "0"));
 		y.options.add(new Option("Kunming", "1"));
-		y.options.add(new Option("Beijing", "2", false, true));  // 默认选中首都
+		y.options.add(new Option("Beijing", "2", false, true));  // 默认选中首都  第一个TRUE是(默认被选项，即焦点的在项，只有一个)
+		//defaultselected，相当于<option selected></option>第二个TRUE是被选择项（可多行被选择），用于multiple模式 
 		y.options.add(new Option("Yantai", "3"));
 
    }

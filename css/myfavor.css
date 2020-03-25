@@ -200,10 +200,7 @@ section {
 
     width: 1300px;
 
-
-    
-    
-    height: 1450px;
+    height: 1760px;
 
     margin: 0;
 
@@ -211,8 +208,124 @@ section {
 
 }
 
+#myfavorcontent{
+	border-color: black;
+	border-radius: 10px;
+	border-width: 10px;
+	border-style: solid;
+	 margin-left:38px;
+	width:1200px;
+	height:1600px;
+	margin-top:30px;
+	float:left;
+	vertical-align:middle;
+	 display:incline-block;
+	
+}
+
+.myfavor_til{
+	font-size:45px;
+	 height:70px;
+	 width:auto;
+	 color:white;
+	 background-color:black;
+	margin-down:20px;
+}
+
+.favoreach{
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:10px;
+	height:220px;
+	border: 5px solid white;
+}
+
+.favorpics{
+	width:200px;
+	height:200px;
+	float:left;
+	display:incline-block;
+	vertical-align:middle;
+	margin-left:20px;
+	margin-top:10px;
+}
+
+.pic_word{
+	margin-left:230px;
+	margin-top:0px;
+	height:500px;
+	width:900px;
+	display:incline-block;
+	vertical-align:middle;
+	text-align:left;
+	positon:relative;
+}
+
+.picword{
+	positon:relative;
+	overflow: hidden;
+	width:600px;
+	text-overflow: ellipsis;/*这样超出2行的部分被截取，显示...*/
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	text-align:left;
+}
+
+.con_word{
+	width: 250px;
+	height:auto;
+	color:white;
+	background:black;
+	font-size:20px;
+	margin-right:-10px;
+	float:right;
+	margin-top:-90px;
+	 display:incline-block;
+	vertical-align:middle;
+	border-color: black;
+	border-width: 10px;
+	border-style: solid;
+	border-radius: 10px;
+	position:relative; 
+	font-weight:bold;
+}
+
+.size2{
+	font-size:30px;
+	margin-left:15px;
+}
+
+.like{
+	tex-decoration: none; /* 去除下划线 */
+	color:red;
+}
+
+.like:hover{
+	color:#009999;
+}
 
 
+
+
+#page{
+	margin-top:30px;
+	text-align:middle;
+}
+#page a{
+	
+	font-size:30px;
+	font-weight:bold;
+	text-decoration: none; /* 去除下划线 */
+	color:black;
+   
+}
+
+#page a:hover{
+	color:#009999;
+	 
+}
+ 
 
 
 

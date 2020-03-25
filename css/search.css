@@ -203,7 +203,7 @@ section {
 
     
     
-    height: 1650px;
+    height: 1750px;
 
     margin: 0;
 
@@ -218,7 +218,7 @@ section {
 	border-style: solid;
 	 margin-left:38px;
 	width:1200px;
-	height:440px;
+	height:470px;
 	margin-top:30px;
 	float:left;
 	vertical-align:middle;
@@ -227,11 +227,11 @@ section {
 }
 
 .til{
-	color:white;
-	background-color:black;
-	vertical-align:middle;
-	font-size:30px;
-	 height:40px;
+	font-size:45px;
+	 height:70px;
+	 width:auto;
+	 color:white;
+	 background-color:black;
 	
 }
 
@@ -279,8 +279,8 @@ section {
 	border-style: solid;
 	margin-left:38px;
 	width:1200px;
-	height:1020px;
-	margin-top:30px;
+	height:1080px;
+	margin-top:50px;
 	float:left;
 	vertical-align:middle;
 	 display:incline-block;
@@ -292,7 +292,7 @@ section {
 	margin-right:10px;
 	margin-top:10px;
 	height:200px;
-	border: 5px solid black;
+	border: 5px solid white;
 }
 
 
@@ -303,14 +303,15 @@ section {
 	float:left;
 	display:incline-block;
 	vertical-align:middle;
-	
+	margin-left:20px;
+	margin-top:20px;
 }
 
 .res_word{
 	margin-left:230px;
 	margin-top:0px;
 	height:200px;
-	width:800px;
+	width:900px;
 	display:incline-block;
 	vertical-align:middle;
 	text-align:left;
@@ -329,7 +330,7 @@ section {
 
 
 #page{
-	margin-top:20px;
+	margin-top:30px;
 	text-align:middle;
 }
 #page a{

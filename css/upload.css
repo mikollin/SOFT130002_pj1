@@ -140,7 +140,7 @@ header {
     margin-left: -0.2px;
    text-align:left;
    background-color:black;
-    position: relative;
+   
     display: none; /* 默认隐藏二级菜单的内容 */
 
 }
@@ -174,7 +174,7 @@ header {
    /*padding-left:30px;*/
     display:incline-block;
     text-align:left;
-   
+  
    
 }
 .top ul li ul li a{
@@ -200,10 +200,7 @@ section {
 
     width: 1300px;
 
-
-    
-    
-    height: 1450px;
+    height: 1750px;
 
     margin: 0;
 
@@ -211,8 +208,113 @@ section {
 
 }
 
+#uploadcontent{
+	border-color: black;
+	border-radius: 10px;
+	border-width: 10px;
+	border-style: solid;
+	 margin-left:38px;
+	width:1200px;
+	height:1550px;
+	margin-top:30px;
+	float:left;
+	vertical-align:middle;
+	 display:incline-block;
+	
+}
+
+.up_til{
+	font-size:45px;
+	 height:70px;
+	 width:auto;
+	 color:white;
+	 background-color:black;
+	
+}
+
+#up_pic{
+	border:2px solid white;
+	margin-top:20px;
+	margin-left:50px;
+	width:1100px;
+	height:800px;
+	vertical-align:middle;
+	
+}
+
+#up_line{
+	font-size:50px;
+	margin-top:10px;
+	
+}
 
 
+
+#up_trigger{
+	margin-top:20px;;
+	width:200px;
+	height:40px;
+	positon:relative;
+}
+
+#up_button{
+	vertical-align:middle;
+	margin-top:20px;
+	margin-left:450px;
+	display:none;
+	positon:relative;
+}
+
+
+#up_descp{
+	border:2px solid white;
+	margin-top:30px;
+	margin-left:50px;
+	width:1100px;
+	height:500px;
+	vertical-align:middle;
+	font-size:20px;
+	 text-align:left;
+	 
+}
+
+.frame1{
+	width:800px;
+	height:30px;
+	margin-top:-120px;
+}
+
+.frame2{
+	width:800px;
+	height:100px;
+	margin-top:0px;
+}
+
+#submit{
+	border:2px solid white;
+	margin-top:20px;
+	margin-left:50px;
+	width:1100px;
+	height:50px;
+	vertical-align:middle;
+	font-size:20px;
+	 text-align:left;
+}
+
+#submit input{
+	
+	vertical-align:left;
+	width:200px;
+	height:40px;
+}
+
+section hr{
+	color:black;
+	width:1200px;
+	height:10px;
+	background-color:black;
+	border:none;
+}
 
 
 

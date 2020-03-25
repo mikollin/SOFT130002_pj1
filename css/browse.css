@@ -292,6 +292,37 @@ section {
  color:white;
 }
 
+#hot_city{
+	
+	width: 280px;
+	color:white;
+	background:black;
+	margin-top:30px;
+	margin-left:0px;
+	vertical-align:middle;
+	border-color: black;
+	border-width: 10px;
+	border-style: solid;
+	border-radius: 10px;
+	position:relative; 
+	font-weight:bold;
+}
+
+
+#hot_city table  {
+	margin-left:90px;
+}
+
+#hot_city table tr th a:hover {
+	color:#009999;
+}
+
+#hot_city table tr th a{
+ text-decoration: none; /* 去除下划线 */
+ color:white;
+}
+
+
 #filter{
 	border-color: black;
 	border-radius: 10px;

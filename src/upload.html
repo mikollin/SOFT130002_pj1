@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="../css/upload.css" />
 <title>my_pj_上传</title>
+
+
+
+
+
+
+
 </head>
 
 
@@ -48,7 +55,7 @@
                     <li id="my account">
                         <a href="#">My Account</a>
                         <ul>
-                             <li id="upload"><a href="./upload.html"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload</a></li>
+                            <li id="upload"><a href="./upload.html"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload</a></li>
                             <li id="pics"><a href="./mypics.html"><i class="fa fa-camera-retro" aria-hidden="true"></i> My Pics</a></li>
                             <li id="favor"><a href="./myfavor.html"><i class="fa fa-gratipay" aria-hidden="true"></i> My Favorite</a></li>
                             <li id="log"><a href="../index.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Log in</a></li>
@@ -60,6 +67,105 @@
   </div>
 
 
+
+
+
+<section>
+
+<div id="uploadcontent">
+
+
+<div class="up_til">UPLOAD</div>
+
+<div id="up_pic">
+
+
+<div id="up_line">the picture hasn't been uploaded</div>
+
+<br>
+<img id="ready_to_up_pics" src="" name="pics" alt=" hasn't been uploaded..."/>
+<br>
+<input id="up_trigger" type="button" value="Upload" onclick="show()">
+<input id="up_button" name="upload_pics" accept="*/gif,*/jpeg,*/jpg,*/png"  type="file" onchange="previewFile()" >
+
+
+
+
+<script>
+function show(){
+	document.getElementById("up_button").style.display="block";
+	document.getElementById("up_line").style.display="none";
+	
+}
+</script>
+
+<br>
+<script>
+function previewFile() {
+	 var preview = document.getElementById('ready_to_up_pics');
+	 var file  = document.getElementById('up_button').files[0];
+	 var reader = new FileReader();
+	 if (file) {
+	  reader.readAsDataURL(file);
+	 } else {
+	  preview.src = "";
+	 }
+	 reader.onloadend = function () {
+		  preview.src = reader.result;
+		 }
+	}
+	//将文件内容读入内存，读取操作完成时，设置图片src为读取文件结果，如果文件成功获取用data:url的字符串形式表示来读取文件，否则不设置src
+</script>
+</div>
+
+
+<br>
+<hr>
+
+
+<div id="up_descp">
+
+<p>Picture's Title</p>
+
+<input class="frame1" name="upload_pic_title" type="text" />
+<br>
+<p>Picture's Description</p>
+
+<textarea class="frame2" name="upload_pic_description" cols="6"></textarea>
+<br>
+
+<p>Shooting Country</p>
+
+<input class="frame1" name="upload_pic_country" type="text" />
+<br>
+<p>Shooting City</p>
+
+<input class="frame1" name="upload_pic_city" type="text" />
+<br>
+
+
+
+</div>
+
+<div id="submit">
+<a href="./mypics.html">
+<input type="submit" value="submit" onclick="alert('提交成功')">
+</a>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</section>
 
 
  <footer>
