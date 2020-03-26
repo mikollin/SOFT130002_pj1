@@ -190,13 +190,6 @@ header {
 }
 
 
-
-
-
-
-
-
-
  
 section {
 
@@ -212,6 +205,32 @@ section {
     text-align: center;
 
 }
+
+
+#refresh{
+	z-index: 9999; /*设置堆叠顺序在最前面*/
+    position: fixed ;
+    right: 30px;
+    bottom:20px;
+    width:50px;
+    height:50px;
+    
+   
+}
+
+#backtotop{
+	z-index: 9999; /*设置堆叠顺序在最前面*/
+    position: fixed ;
+    right: 30px;
+    bottom:80px;
+    width:50px;
+    height:50px;
+    
+}
+
+
+
+
 
 #first{
 	

@@ -251,7 +251,7 @@ section {
 }
 
 .pic_word{
-	margin-left:230px;
+	margin-left:250px;
 	margin-top:0px;
 	height:500px;
 	width:900px;
@@ -278,7 +278,7 @@ section {
 	color:white;
 	background:black;
 	font-size:20px;
-	margin-right:-10px;
+	margin-right:0px;
 	float:right;
 	margin-top:-90px;
 	 display:incline-block;
@@ -297,7 +297,7 @@ section {
 }
 
 .like{
-	tex-decoration: none; /* 去除下划线 */
+	text-decoration: none; /* 去除下划线 */
 	color:red;
 }
 

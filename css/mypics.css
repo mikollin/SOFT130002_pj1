@@ -203,7 +203,7 @@ section {
 
     
     
-    height: 1450px;
+    height: 1750px;
 
     margin: 0;
 
@@ -211,10 +211,148 @@ section {
 
 }
 
+#mypicscontent{
+	border-color: black;
+	border-radius: 10px;
+	border-width: 10px;
+	border-style: solid;
+	 margin-left:38px;
+	width:1200px;
+	height:1600px;
+	margin-top:30px;
+	float:left;
+	vertical-align:middle;
+	 display:incline-block;
+	
+}
+
+.mypics_til{
+	font-size:45px;
+	 height:70px;
+	 width:auto;
+	 color:white;
+	 background-color:black;
+	margin-down:20px;
+}
+
+.pic_each{
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:10px;
+	height:220px;
+	border: 5px solid white;
+}
+
+.my_pics{
+	width:200px;
+	height:200px;
+	float:left;
+	display:incline-block;
+	vertical-align:middle;
+	margin-left:50px;
+	margin-top:10px;
+	
+}
+
+.pic_word{
+	margin-left:280px;
+	
+	height:200px;
+	width:600px;
+	display:incline-block;
+	vertical-align:middle;
+	text-align:left;
+	
+	
+}
+
+.picword{
+	display:incline-block;
+	vertical-align:middle;
+	overflow: hidden;
+	width:600px;
+	text-overflow: ellipsis;/*这样超出2行的部分被截取，显示...*/
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	text-align:left;
+}
+
+
+.con_word1{
+	width: 150px;
+	height:auto;
+	color:white;
+	background:black;
+	font-size:20px;
+	margin-right:70px;
+	float:right;
+	margin-top:-200px;
+	display:incline-block;
+	vertical-align:middle;
+	border-color: black;
+	border-width: 10px;
+	border-style: solid;
+	border-radius: 10px;
+	 
+	font-weight:bold;
+}
+
+.con_word2{
+	width: 150px;
+	height:auto;
+	color:white;
+	background:black;
+	font-size:20px;
+	margin-right:70px;
+	float:right;
+	margin-top:-100px;
+	display:incline-block;
+	vertical-align:middle;
+	border-color: black;
+	border-width: 10px;
+	border-style: solid;
+	border-radius: 10px;
+	 
+	font-weight:bold;
+}
+
+.size2{
+	font-size:30px;
+	
+}
+
+.modify{
+	text-decoration: none; /* 去除下划线 */
+	color:white;
+	text-align:center;
+}
+
+.modify:hover{
+	color:#009999;
+}
 
 
 
 
+#page{
+	margin-top:30px;
+	text-align:middle;
+}
+#page a{
+	
+	font-size:30px;
+	font-weight:bold;
+	text-decoration: none; /* 去除下划线 */
+	color:black;
+   
+}
+
+#page a:hover{
+	color:#009999;
+	 
+}
+ 
 
 
 
