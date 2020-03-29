@@ -66,10 +66,10 @@
 <div id="sidebar">
     <div id="sidesearch">
                     <p><i class="fa fa-ravelry" aria-hidden="true"></i> SEARCH BY TITLE</p>
-                    <form action="#" method="POST" name="to_browse">
+                    <form action="#" method="GET" name="to_browse">
                     <!-- 两个均用name=“to_browse”来命名form -->
                     <i class="fa fa-search" aria-hidden="true"></i> <input name="browse_search" type="search" >
-                    <input name="search" type="submit" value="search" onclick="alert('已搜索');window.location.href='browse.html'">
+                    <input name="search" type="submit" value="search" onclick="alert('已搜索')">
                     <!-- 解决放到github上之后的405not allowed 问题 -->
                     </form>
     </div>
@@ -120,7 +120,7 @@
    <div id="filtitle">FILTER</div>
 
    <div id="fil">
-                    <form action="#" method="POST" name="to_browse">
+                    <form action="#" method="GET" name="to_browse">
                     <select name="select_content">
                      <option selected="selected" value=""disabled selected hidden>CONTENT</option>
                      <option>Building</option>
@@ -141,7 +141,7 @@
                      <option selected="selected" value=""disabled selected hidden >CITY</option>
                     </select>
 
-                    <input name="filter" type="submit" value="FILTER" onclick="alert('已搜索');window.location.href='browse.html'">
+                    <input name="filter" type="submit" value="FILTER" onclick="alert('已搜索')">
 
                     </form>
 
