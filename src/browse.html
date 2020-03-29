@@ -64,110 +64,85 @@
 <section>
 
 <div id="sidebar">
-<div id="sidesearch">
-<p><i class="fa fa-ravelry" aria-hidden="true"></i> SEARCH BY TITLE</p>
-
-<i class="fa fa-search" aria-hidden="true"></i> <input name="browse_search" type="search" >
-
- <input name="search" type="button" value="search" onclick="alert('已搜索')">
-
-</div>
+    <div id="sidesearch">
+                    <p><i class="fa fa-ravelry" aria-hidden="true"></i> SEARCH BY TITLE</p>
+                    <form action="#" method="POST" name="to_browse">
+                    <!-- 两个均用name=“to_browse”来命名form -->
+                    <i class="fa fa-search" aria-hidden="true"></i> <input name="browse_search" type="search" >
+                    <input name="search" type="submit" value="search" onclick="alert('已搜索')">
+                    </form>
+    </div>
 
 <br>
 
-<div id="hot_content">
-<p><i class="fa fa-fire" aria-hidden="true"></i> HOT CONTENTS</p>
-<table>
-<tr><th><a href="#" onclick="alert('已筛选')">SCENERY</a></th></tr>
-<tr><th><a href="#" onclick="alert('已筛选')">CITY</a></th></tr>
-<tr><th><a href="#" onclick="alert('已筛选')">BUILDING</a></th></tr>
-<tr><th><a href="#" onclick="alert('已筛选')">NATURAL</a></th></tr>
-<tr><th><a href="#" onclick="alert('已筛选')">ANIMAL</a></th></tr>
-<tr><th><a href="#" onclick="alert('已筛选')">PEOPLE</a></th></tr>
-<tr><th><a href="#" onclick="alert('已筛选')">WONDER</a></th></tr>
-</table>
-
-
-</div>
+    <div id="hot_content">
+                    <p><i class="fa fa-fire" aria-hidden="true"></i> HOT CONTENTS</p>
+                    <table>
+                    <tr><th><a href="#" onclick="alert('已筛选')">SCENERY</a></th></tr>
+                    <tr><th><a href="#" onclick="alert('已筛选')">CITY</a></th></tr>
+                    <tr><th><a href="#" onclick="alert('已筛选')">BUILDING</a></th></tr>
+                    <tr><th><a href="#" onclick="alert('已筛选')">NATURAL</a></th></tr>
+                    <tr><th><a href="#" onclick="alert('已筛选')">ANIMAL</a></th></tr>
+                    <tr><th><a href="#" onclick="alert('已筛选')">PEOPLE</a></th></tr>
+                    <tr><th><a href="#" onclick="alert('已筛选')">WONDER</a></th></tr>
+                    </table>
+   </div>
 <br>
 
-<div id="hot_country">
-<p><i class="fa fa-fire" aria-hidden="true"></i> HOT COUNTRYS</p>
-<table>
-<tr><th><a href="#" onclick="alert('已筛选')">CHINA</a></th></tr>
-<tr><th><a href="#" onclick="alert('已筛选')">ITALY</a></th></tr>
-<tr><th><a href="#" onclick="alert('已筛选')">JAPAN</a></th></tr>
-
-<tr><th><a href="#" onclick="alert('已筛选')">AMERICA</a></th></tr>
-
-</table>
-
-
-</div>
+   <div id="hot_country">
+                    <p><i class="fa fa-fire" aria-hidden="true"></i> HOT COUNTRYS</p>
+                    <table>
+                    <tr><th><a href="#" onclick="alert('已筛选')">CHINA</a></th></tr>
+                    <tr><th><a href="#" onclick="alert('已筛选')">ITALY</a></th></tr>
+                    <tr><th><a href="#" onclick="alert('已筛选')">JAPAN</a></th></tr>
+                    <tr><th><a href="#" onclick="alert('已筛选')">AMERICA</a></th></tr>
+                    </table>
+   </div>
 <br>
 
 
 
-<div id="hot_city">
-<p><i class="fa fa-fire" aria-hidden="true"></i> HOT CITIES</p>
-<table>
-<tr><th><a href="#" onclick="alert('已筛选')">SHANGHAI</a></th></tr>
-<tr><th><a href="#" onclick="alert('已筛选')">HOKKAIDO</a></th></tr>
-<tr><th><a href="#" onclick="alert('已筛选')">BUDAPEST</a></th></tr>
-<tr><th><a href="#" onclick="alert('已筛选')">NEWYORK</a></th></tr>
-
-</table>
-
-
+   <div id="hot_city">
+                    <p><i class="fa fa-fire" aria-hidden="true"></i> HOT CITIES</p>
+                    <table>
+                    <tr><th><a href="#" onclick="alert('已筛选')">SHANGHAI</a></th></tr>
+                    <tr><th><a href="#" onclick="alert('已筛选')">HOKKAIDO</a></th></tr>
+                    <tr><th><a href="#" onclick="alert('已筛选')">BUDAPEST</a></th></tr>
+                    <tr><th><a href="#" onclick="alert('已筛选')">NEWYORK</a></th></tr>
+                    </table>
+   </div>
 </div>
-</div>
-
-
-
-
-
 
 
 
 <div id="filter">
-<div id="filtitle">FILTER</div>
+   <div id="filtitle">FILTER</div>
 
-<div id="fil">
+   <div id="fil">
+                    <form action="#" method="POST" name="to_browse">
+                    <select name="select_content">
+                     <option selected="selected" value=""disabled selected hidden>CONTENT</option>
+                     <option>Building</option>
+                     <option>Natural</option>
+                    </select>
 
- <select name="select_content">
+                    <select id="first" name="select_country" onChange="change()">
+                     <option selected="selected" value=""disabled selected hidden>COUNTRY</option>
 
-   <option selected="selected" value=""disabled selected hidden>CONTENT</option>
+                     <option>China</option>
+                     <option>Japan</option>
+                     <option>Italy</option>
+                     <option>America</option>
+                    </select>
+                    
+                    
+                    <select id="second" name="select_city">
+                     <option selected="selected" value=""disabled selected hidden >CITY</option>
+                    </select>
 
-   <option>Building</option>
-   <option>Natural</option>
-  
+                    <input name="filter" type="submit" value="FILTER" onclick="alert('已筛选')">
 
-</select>
-
-<select id="first" name="select_country" onChange="change()">
-
-   <option selected="selected" value=""disabled selected hidden>COUNTRY</option>
-
-   <option>China</option>
-   <option>Japan</option>
-   <option>Italy</option>
-   <option>America</option>
-
-</select>
-
- 
-
-<select id="second" name="select_city">
-
-  
-
-   <option selected="selected" value=""disabled selected hidden >CITY</option>
-   
-</select>
-
- <input name="filter" type="button" value="FILTER" onclick="alert('已筛选')">
-
- 
+                    </form>
 
 <script>
 
@@ -240,39 +215,38 @@ function change()
 
 </script>
 <hr>
-</div>
+   </div>
 
 
 
-<div id="filpic">
+                     <div id="filpic">
 
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9494472443.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8710289254.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8645912379.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9493997865.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8710320515.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8731523536.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8711645510.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9496560520.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9494464567.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9496787858.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9495571869.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9498358806.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9496799098.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/5857398054.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/6114907897.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/6592294487.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8152020963.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9505536014.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9505897492.jpg"/></a>
-<a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9502741759.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9494472443.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8710289254.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8645912379.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9493997865.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8710320515.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8731523536.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8711645510.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9496560520.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9494464567.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9496787858.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9495571869.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9498358806.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9496799098.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/5857398054.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/6114907897.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/6592294487.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/8152020963.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9505536014.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9505897492.jpg"/></a>
+                     <a href="../src/detail.html"><img class="pic1" src="../img\travel-images\normal/medium/9502741759.jpg"/></a>
+                     </div>
 
-
-</div>
-
-<div id="page"> <a href="#" onclick="alert('正在跳转首页')">&lt </a><a href="#" onclick="alert('正在跳转')">1 </a> 
-<a href="#" onclick="alert('正在跳转')">2 </a><a href="#" onclick="alert('正在跳转')">3 </a> <a href="#" onclick="alert('正在跳转')">4 </a>
-<a href="#" onclick="alert('正在跳转')">5 </a><a href="#" onclick="alert('正在跳转尾页')">> </a></div>
+   <div id="page"> <a href="#" onclick="alert('正在跳转首页')">&lt </a><a href="#" onclick="alert('正在跳转')">1 </a> 
+   <a href="#" onclick="alert('正在跳转')">2 </a><a href="#" onclick="alert('正在跳转')">3 </a> <a href="#" onclick="alert('正在跳转')">4 </a>
+   <a href="#" onclick="alert('正在跳转')">5 </a><a href="#" onclick="alert('正在跳转尾页')">> </a>
+   </div>
 
 </div>
 
