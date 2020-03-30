@@ -136,7 +136,7 @@ header {
 
 .top ul li ul{
     /* 设置二级菜单 */
-    display:incline-block;
+    display:inline-block;
     margin-left: -0.2px;
    text-align:left;
    background-color:black;
@@ -172,11 +172,17 @@ header {
 .top ul li ul li{
     /* 二级菜单li内容的显示 */
    /*padding-left:30px;*/
-    display:incline-block;
+    display:inline-block;
     text-align:left;
    
    
 }
+
+#my_account{
+    float:right;
+    margin-right:5%;
+}
+
 .top ul li ul li a{
 	 padding-left:30px;
 	text-align:left;
@@ -221,7 +227,7 @@ section {
 	margin-top:30px;
 	float:left;
 	vertical-align:middle;
-	 display:incline-block;
+	 display:inline-block;
 	
 }
 
@@ -243,7 +249,7 @@ section {
 	border: 5px solid white;
 	float:left;
 	margin-left:50px;
-	 display:incline-block;
+	 display:inline-block;
 	 vertical-align:middle;
 }
 
@@ -251,7 +257,7 @@ section {
 	
 	float:left;
 	margin-left:20px;
-	display:incline-block;
+	display:inline-block;
 	vertical-align:middle;
 }
 
@@ -264,7 +270,7 @@ section {
 	margin-bottom:40px;
 	float:left;
 	margin-left:90px;
-	 display:incline-block;
+	 display:inline-block;
 	vertical-align:middle;
 	border-color: black;
 	border-width: 10px;

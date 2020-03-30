@@ -137,7 +137,7 @@ header {
 
 .top ul li ul{
     /* 设置二级菜单 */
-    display:incline-block;
+    display:inline-block;
     margin-left: -0.2px;
    text-align:left;
    background-color:black;
@@ -168,12 +168,15 @@ header {
 	 background-size:30px 30px;
 	 
 }*/
-
+#my_account{
+    float:right;
+    margin-right:5%;
+}
 
 .top ul li ul li{
     /* 二级菜单li内容的显示 */
    /*padding-left:30px;*/
-    display:incline-block;
+    display:inline-block;
     text-align:left;
    
    
@@ -183,6 +186,7 @@ header {
 	text-align:left;
 	
 	}
+
 .top ul li:hover ul{
     /* 鼠标选中二级菜单内容时 */
     display: block;
@@ -248,7 +252,7 @@ height:720px;
 
 section div{
 	margin-top:60px;
-	display:incline-block;
+	display:inline-block;
 	border-color: black;
 	border-width: 10px;
 	border-style: solid;
@@ -294,7 +298,7 @@ display: -webkit-box;
 	max-height:100px;
  width:expression(tis.width <100 && this.height < this.width ? 100: true); 
  height:expression(this.height > 100 ? 100: true);
- /*图片大于***自动缩放到***px，如果小于***px即为实际大小，高度大于xxxpx缩放到xxxpx，xxxpx为实际大小*/*/
+ /*图片大于***自动缩放到***px，如果小于***px即为实际大小，高度大于xxxpx缩放到xxxpx，xxxpx为实际大小*/
     
 }
 
